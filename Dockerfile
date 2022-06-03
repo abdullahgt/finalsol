@@ -20,4 +20,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 COPY --from=build-node /ClientApp/build ./ClientApp/build
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet NetCoreReactHeroku.dll
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet finaltestreactdotnet.dll
